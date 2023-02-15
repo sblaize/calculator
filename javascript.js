@@ -45,12 +45,10 @@ multiply
     switch(operator) {
       case add:
         return operators[0](x,y);
-        break;
       case subtract:
         return operators[1](x,y);
       case divide:
         return operators[2](x,y);
-        break;
       case multiply:
         return operators[3](x,y);
     }};
