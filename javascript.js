@@ -23,3 +23,9 @@ const multiply = function(x, y) {
       return product
     };
     
+    const operators = [
+      add,
+      subtract,
+      divide,
+      multiply
+    ]
