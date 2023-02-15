@@ -3,7 +3,7 @@ const add = function(x, y) {
     return adder
     };
     
-    const subtract = function(x, y) {
+const subtract = function(x, y) {
     if (x > y) {
       x = x
     } else if (x < y) {
@@ -13,17 +13,27 @@ const add = function(x, y) {
     return minus
     };
     
-    const sum = function(n) {
-      let amount = n.reduce((a,b) => {
-      return a + b;
+const sum = function(n) {
+      let amount = n.reduce((x,y) => {
+      return x + y;
     }, 0)
     return amount
     };
     
-    const multiply = function(n) {
-      let amount = n.reduce((a,b) => {
-        return a * b;
+const multiply = function(n) {
+      let amount = n.reduce((x,y) => {
+        return x * y;
       }, 1)
       return amount
     };
     
+const operators = [
+  add,
+  subtract,
+  sum,
+  multiply
+]
+
+    function operate() {
+
+    }
