@@ -1,37 +1,33 @@
-const add = function(x, y) {
+function add(x, y) {
     let adder = x + y
     return adder
     };
     
-const subtract = function(x, y) {
-    if (x > y) {
-      x = x
-    } else if (x < y) {
-    x = y
-    }
+function subtract(x, y) {
     let minus = x - y
     return minus
     };
     
-const divide = function(x, y) {
+function divide(x, y) {
     let dividend = x/y;
     return dividend
     };
     
-const multiply = function(x, y) {
+function multiply(x,y) {
       let product = x * y;
       return product
     };
     
     const operators = [
-      add,
-      subtract,
-      divide,
-      multiply
+add,
+subtract,
+divide,
+multiply
     ]
 
         
     const numbers = [
+      0,
       1,
       2,
       3,
@@ -40,7 +36,22 @@ const multiply = function(x, y) {
       6,
       7,
       8,
-      9,
-      0
+      9
     ]
-    
+
+
+
+  function operate(operator,x,y) {
+    switch(operator) {
+      case add:
+        return operators[0](x,y);
+        break;
+      case subtract:
+        return operators[1](x,y);
+      case divide:
+        return operators[2](x,y);
+        break;
+      case multiply:
+        return operators[3](x,y);
+    }};
+
