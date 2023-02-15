@@ -13,27 +13,13 @@ const subtract = function(x, y) {
     return minus
     };
     
-const sum = function(n) {
-      let amount = n.reduce((x,y) => {
-      return x + y;
-    }, 0)
-    return amount
+const divide = function(x, y) {
+    let dividend = x/y;
+    return dividend
     };
     
-const multiply = function(n) {
-      let amount = n.reduce((x,y) => {
-        return x * y;
-      }, 1)
-      return amount
+const multiply = function(x, y) {
+      let product = x * y;
+      return product
     };
     
-const operators = [
-  add,
-  subtract,
-  sum,
-  multiply
-]
-
-    function operate() {
-
-    }
