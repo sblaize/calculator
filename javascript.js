@@ -53,3 +53,6 @@ multiply
         return operators[3](x,y);
     }};
 
+const container = document.getElementById('container');
+const display = document.createElement('div');
+const btnrow1 = document.createElement('div'); 
